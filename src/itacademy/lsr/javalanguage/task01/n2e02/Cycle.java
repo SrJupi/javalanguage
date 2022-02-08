@@ -1,10 +1,14 @@
-package itacademy.lsr.javalanguage.task01.n2e01;
+package itacademy.lsr.javalanguage.task01.n2e02;
 
 public class Cycle {
     int wheels;
     boolean handleBars;
-    public static void ride (Cycle c){
-        System.out.println("Riding wild!");
+
+    public int getNumWheels (Cycle c){
+        return c.wheels;
+    }
+    public void ride (Cycle c){
+        System.out.println("Number of wheels: " + getNumWheels(c));
     }
 }
 
@@ -24,8 +28,8 @@ class Bicycle extends Cycle {
 
 }
 
-class Tricycle extends Cycle {
-    public Tricycle() {
+class Tricycle extends Cycle{
+    public Tricycle(){
         wheels = 3;
         handleBars = true;
     }
