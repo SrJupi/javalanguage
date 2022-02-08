@@ -1,7 +1,5 @@
 package itacademy.lsr.javalanguage.task01.n1e02;
 
-import javax.sound.midi.Soundbank;
-
 public class Vehicle {
     public String name;
     public boolean state = false;
@@ -19,7 +17,7 @@ public class Vehicle {
         }
     }
 
-    public String stateString(){
+    public String displayStateName(){
         if (state){
             return "on";
         }
@@ -45,12 +43,12 @@ public class Vehicle {
 
     public static void main(String[] args) {
 
-        // Call non static methods
+        // Call non-static methods
         Vehicle car = new Vehicle("Car");
-        System.out.println(car.name + " is " + car.stateString());
+        System.out.println(car.name + " is " + car.displayStateName());
         car.accelerate(20);
         car.startEngine();
-        System.out.println(car.name + " is " + car.stateString());
+        System.out.println(car.name + " is " + car.displayStateName());
         System.out.println("Current speed: " + car.speed);
         car.accelerate(15);
         System.out.println("Current speed: " + car.speed);
