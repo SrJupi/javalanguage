@@ -7,8 +7,8 @@ public class Cycle {
     public int getNumWheels (Cycle c){
         return c.wheels;
     }
-    public void ride (Cycle c){
-        System.out.println("Number of wheels: " + getNumWheels(c));
+    public static void ride (Cycle c){
+        System.out.println("Number of wheels: " + c.getNumWheels(c));
     }
 }
 
@@ -38,13 +38,13 @@ class Tricycle extends Cycle{
 class Test{
     public static void main(String[] args){
         Unicycle uni = new Unicycle();
-        uni.ride(uni);
-
+//        uni.ride(uni);
+        Cycle.ride(uni);
         Bicycle bici = new Bicycle();
-        bici.ride(bici);
-
+//        bici.ride(bici);
+        Cycle.ride(bici);
         Tricycle tri = new Tricycle();
-        tri.ride(tri);
-
+//        tri.ride(tri);
+        Cycle.ride(tri);
     }
 }

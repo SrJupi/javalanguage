@@ -34,13 +34,13 @@ class Tricycle extends Cycle {
 class Test{
     public static void main(String[] args){
         Unicycle uni = new Unicycle();
-        uni.ride(uni);
-
+//        uni.ride(uni);
+        Cycle.ride(uni);
         Bicycle bici = new Bicycle();
-        bici.ride(bici);
-
+//        bici.ride(bici);
+        Cycle.ride(bici);
         Tricycle tri = new Tricycle();
-        tri.ride(tri);
-
+//        tri.ride(tri);
+        Cycle.ride(tri);
     }
 }
