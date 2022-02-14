@@ -1,7 +1,6 @@
-package itacademy.lsr.javalanguage.task03.n1e01;
+package itacademy.lsr.javalanguage.task03.n1e02;
 
 import java.util.*;
-
 
 public class Main {
     public static void main(String[] args) {
@@ -19,12 +18,20 @@ public class Main {
         Month december = new Month("December");
         ArrayList<Month> months = new ArrayList<>(Arrays.asList(january, february, march, april, may, june, july, september,
                 october, november, december));
-        for (Month month : months) {
+        months.add(7, august);
+
+        //Cast array to set
+        HashSet <Month> monthsSet = new HashSet<>(months);
+        for (Month month:
+                monthsSet) {
             System.out.print(month.name + " ");
         }
-        months.add(7, august);
         System.out.println();
-        for (Month month : months) {
+
+        // try to add July again
+        monthsSet.add(july);
+        for (Month month:
+                monthsSet) {
             System.out.print(month.name + " ");
         }
     }
