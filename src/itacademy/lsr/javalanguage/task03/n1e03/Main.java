@@ -5,11 +5,11 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         //Create containers
-        ArrayList<String> arrayList =new ArrayList<>();
-        LinkedList<String> linkedList = new LinkedList<>();
-        HashSet<String> hashSet = new HashSet<>();
-        LinkedHashSet<String> linkedHashSet = new LinkedHashSet<>();
-        TreeSet<String> treeSet = new TreeSet<>();
+        List<String> arrayList =new ArrayList<>();
+        List<String> linkedList = new LinkedList<>();
+        Set<String> hashSet = new HashSet<>();
+        Set<String> linkedHashSet = new LinkedHashSet<>();
+        Set<String> treeSet = new TreeSet<>();
 
         //Create generator and populate
         Generator myTitanic = new Generator(Arrays.asList("Jack", "Rose", "Iceberg"));
