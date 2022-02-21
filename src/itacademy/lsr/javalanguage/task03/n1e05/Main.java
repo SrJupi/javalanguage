@@ -8,6 +8,7 @@ public class Main {
         List<Integer> originalSecondList = new ArrayList<>(Arrays.asList(5, 6 , 7, 8, 9));
 
         //listiterator starting from end of list
+
         List<Integer> secondList = new ArrayList<>(originalSecondList);
         ListIterator<Integer> reverseListIterator = firstList.listIterator(firstList.size());
         while(reverseListIterator.hasPrevious()){
@@ -28,8 +29,8 @@ public class Main {
         }
         System.out.println("listiterator starting from start of list: " + secondList);
 
-        
-        //reverse for loop
+
+         //reverse for loop
         secondList = new ArrayList<>(originalSecondList);
         for (int i = firstList.size()-1; i >= 0; i--) {
             secondList.add(firstList.get(i));
@@ -51,6 +52,12 @@ public class Main {
         secondList.addAll(tmpList);
         System.out.println("using iterator and a tmp list: " + secondList);
 
+        // reverse list
+
+        secondList = new ArrayList<>(originalSecondList);
+        Collections.reverse(firstList);
+        secondList.addAll(firstList);
+        System.out.println("using reverse list: " + secondList);
 
     }
 }
