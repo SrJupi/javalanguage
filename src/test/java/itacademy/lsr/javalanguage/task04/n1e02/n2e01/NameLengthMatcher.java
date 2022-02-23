@@ -1,4 +1,4 @@
-package itacademy.lsr.javalanguage.task04.n2e01;
+package itacademy.lsr.javalanguage.task04.n1e02.n2e01;
 
 import org.hamcrest.Description;
 import org.hamcrest.TypeSafeMatcher;

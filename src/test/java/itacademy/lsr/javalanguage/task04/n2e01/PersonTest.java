@@ -1,12 +1,13 @@
 package itacademy.lsr.javalanguage.task04.n2e01;
 
+import itacademy.lsr.javalanguage.task04.n1e02.n2e01.Person;
 import org.hamcrest.FeatureMatcher;
 import org.hamcrest.Matcher;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
-import static itacademy.lsr.javalanguage.task04.n2e01.NameLengthMatcher.areFullNameSameLength;
+import static itacademy.lsr.javalanguage.task04.n1e02.n2e01.NameLengthMatcher.areFullNameSameLength;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
